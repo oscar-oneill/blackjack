@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./images/favicon.ico" type="image/png" sizes="48x48">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play Blackjack!</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/gamebuttons.css">
+    <link rel="stylesheet" href="./css/player.css">
+    <link rel="stylesheet" href="./css/scoreboard.css">
+</head>
+<body>
+    <div class="App">
+        <nav>
+            <div id="nav_title">
+                <span>Blackjack</span>
+                <img id="nav_image" src="./images/blackjack.png"/>
+            </div>
+
+            <button id="rule_button">
+                Rules
+            </button>
+        </nav>
+
+        <div class="rule_box">
+            <h2>Rules</h2>
+            <br>
+            <h3>Objective</h3>
+            <h5>Each participant attempts to beat the dealer by getting a count as close to 21 as possible, without going over 21.</h5>
+            <br>
+            <h3>Card Values / Scoring</h3>
+            <h5>A (worth 11 or 1), K, Q, J (face cards worth 10), 10, 9, 8, 7, 6, 5, 4, 3, 2.</h5>
+            <br>
+            <h3>How To Play</h3>
+            <h5>To hit is to ask for another card, to stand is to pass. If you choose to hit and then receive a card that puts you over
+            the value of 21, you’ve busted and are now out of that round. You may continue to hit until you are satisfied with your
+            hand.</h5>
+            <br>
+            <h4>Developed by Oscar O'Neill</h4>
+        </div>
+
+        <div class="message_box">Let's Play!</div>
+        <div class="game_box">
+            <div class="sideA">
+                <div class="player_container playerA">
+                    <div class="player_gradient"></div>
+                    <div class="player_name">You</div>
+                    <div id="scoreA">0</div>
+                </div>
+                
+                <div class="playerA_hand"></div>
+            </div>
+            <div class="sideB">
+                <div class="player_container playerB">
+                    <div class="player_gradient"></div>
+                    <div class="player_name">Dealer</div>
+                    <div id="scoreB">0</div>
+                </div>
+                
+                <div class="playerB_hand"></div>
+            </div>
+        </div>
+
+        <div class="data_box">
+            <div class="buttons_container">
+                <ul>
+                    <li id="button_hit">Hit</li>
+                    <li id="button_stand">Stand</li>
+                    <li id="button_deal">Deal</li>
+                </ul>
+            </div>
+
+            <div class="table_container">
+                <span>Scoreboard</span>
+                <table>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                    <tr>
+                        <th id="wins">0</th>
+                        <th id="losses">0</th>
+                        <th id="draws">0</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

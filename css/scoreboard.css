@@ -1,0 +1,16 @@
+.table_container {
+    margin-top: 30px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table_container span {
+    font-size: 40px;
+}
+
+.table_container table {
+    width: 100%;
+}

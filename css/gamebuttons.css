@@ -1,0 +1,37 @@
+.buttons_container {
+    height: 100%;
+    padding: 10px;
+}
+
+.buttons_container ul {
+    width: 100%;
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+}
+
+.buttons_container ul li {
+    height: 40px;
+    width: 65px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#button_hit {
+    background: #1e90ff;
+    color: #ffff00;
+}
+
+#button_stand {
+    background: #48d1cc;
+    color:  #ffff00;
+}
+
+#button_deal {
+    background: #ffa07a;
+    color: #ff0000;
+}
