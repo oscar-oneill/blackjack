@@ -96,6 +96,8 @@ nav {
   align-items: center;
   flex-direction: column;
   padding: 15px;
+  text-align: center;
+  z-index: 1;
 }
 
 .message_box {
