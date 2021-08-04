@@ -35,26 +35,32 @@
 .playerA_hand, .playerB_hand {
     position: relative;
     display: flex;
-    min-height: 180px;
-    width: 50%;
+    height: 180px;
+    justify-content: center;
+    width: 25%;
 }
 
 .player_card {
     object-fit: contain;
-    width: 100%;
-    height: 130px;
+    width: 100px;
+    height: 100%;
 }
 
 @media screen and (max-width: 440px) {
     .player_card {
-        width: 75%;
-        height: 60px;
+        width: 100px;
+        height: 100%;
     }
+
+    .playerA_hand, .playerB_hand {
+        height: 100px;
+    }
+
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 830px) {
     .player_card {
         width: 75%;
-        height: 75px;
+        height: 100%;
     }
 }
